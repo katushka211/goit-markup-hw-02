@@ -12,10 +12,11 @@
 }
 
 body {
-  background-color: var(--primary-light-color)
+  background-color: var(--primary-light-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /*--------------------------HEADER---------------------------*/
@@ -39,17 +40,29 @@ body {
   list-style: none;
 }
 
-.nav-link {
+.nav-link,.contact-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-dark-color);
   text-decoration: none;
 }
 
+.nav-link{
+  color: var(--primary-dark-color);
+}
+
+.contact-link{
+  color: var(--primary-text-color);
+}
+
+
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -91,7 +104,7 @@ body {
 
 /*----------------НАШІ ПЕРЕВАГИ-------------------------*/
 
-.section-title {
+.main-section {
   background-color: var(--background-dark-color);
 }
 
@@ -115,8 +128,7 @@ body {
 .list-team{
   background-color: var(--primary-light-color);
 }
-.title {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -124,32 +136,29 @@ body {
 }
 
 .content-titles {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-dark-color);
 }
 
-.content {
-  font-weight: 400;
-  font-size: 14px;
+.text {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
 
 .staff-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
   color: var(--primary-dark-color);
 }
 
 .staff-position {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 /*---------------------FOOTER---------------------------------*/
@@ -159,26 +168,15 @@ body {
 
 .footer-address {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   color: var(--primary-light-color);
 }
 
-.footer-address:hover,.footer-address:focus{color: var(--accent-color);
-
-}
 .footer-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   color:var(--secondary-light-color);
 }
-
-.footer-link:hover,.footer-link:focus{color: var(--accent-color);}
-
-
 
 
   /*----------------------PORTFOLIO------------------------------*/
@@ -190,7 +188,6 @@ color: var(--primary-dark-color);
   }
 
   .works-sub-title{
-font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 color: var(--primary-text-color);
