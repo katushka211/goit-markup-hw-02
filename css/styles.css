@@ -178,6 +178,10 @@ body {
   color:var(--secondary-light-color);
 }
 
+.footer-link:hover, .footer-link:focus {
+  color: var(--accent-color);
+}
+
 
   /*----------------------PORTFOLIO------------------------------*/
   .works-title{
